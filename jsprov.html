@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="text-field">Skriv något:</label>
+        <input type="text" id="text-field" name="text-field">
+        <button type="button" onclick="logTextField()">Logga till konsol</button>
+    </form>
+
+    <script>
+        //Använd metoden getElementById för att hitta <h1> elementet med ID:t "test" och ändra dess färg till "red"
+        document.getElementById('demo').style.backgroundColor="red";
+
+        //Skriv en funktion som visar "Hej" i den inre HTML-koden för ett element med ID:t "demo"
+        function showGreeting() {
+        const demoElement = document.getElementById("demo");
+        demoElement.innerHTML = "Hej";
+        }
+
+        //Skriv en funktion som tar en array av tal och retunerar en ny array där varje element i den ursprungliga arrayen har blvit mutliplicerad med 5. (A NIVÅ)
+        function multiplyByFive(arr) {
+        const result = [];
+        for (let i = 0; i < arr.length; i++) {
+            result.push(arr[i] * 5);
+        }
+        return result;
+        }
+
+        //Skriv en funktion som tar emot två tal som parametrar och returnerar deras multiplikation
+        function mulitplynumbers(num1,num2){
+            return num1*num2;
+        }
+
+        //Skapa ett HTML-formulär med ett textfält och en knapp. När användaren klickar på knappen ska innehållet i textfältet visas i konsolen. (C Nivå)
+        function logTextField() {
+            const textField = document.getElementById("text-field");
+            console.log(textField.value);
+        }
+    </script>
+  
